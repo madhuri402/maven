@@ -20,3 +20,5 @@ spec:
     - name: nginx-container
       image: rajkumar02/webapp:v1
       imagePullPolicy: Never
+      command: ["/bin/sh"]
+      args: ["-c", "while true; do echo hello; sleep 10;done"]
